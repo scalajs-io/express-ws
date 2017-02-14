@@ -1,21 +1,28 @@
-Express-WS API for Scala.js
+ExpressWS API for Scala.js
 ================================
-This is a Scala.js type-safe binding for [express-ws](https://www.npmjs.com/package/express-ws)
+[express-ws](https://www.npmjs.com/package/express-ws) - WebSocket endpoints for [Express](https://github.com/scalajs-io/express) applications.
 
-WebSocket endpoints for [Express](https://github.com/scalajs-io/express) applications.
+### Description
 
-#### Build Dependencies
+WebSocket endpoints for [Express](https://github.com/scalajs-io/express) applications. 
+Lets you define WebSocket endpoints like any other type of route, 
+and applies regular Express midddleware like for anything else.
 
-* [ScalaJs.io v0.3.x](https://github.com/ldaniels528/scalajs.io)
+Version 2.0 of this library contains a breaking change. 
+Please make sure to read [CHANGELOG.md](https://github.com/HenningM/express-ws/blob/master/CHANGELOG.md) before upgrading.
+
+### Build Dependencies
+
+* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
-#### Build/publish the SDK locally
+### Build/publish the SDK locally
 
 ```bash
  $ sbt clean publish-local
 ```
 
-#### Running the tests
+### Running the tests
 
 Before running the tests the first time, you must ensure the npm packages are installed:
 
@@ -29,7 +36,7 @@ Then you can run the tests:
 $ sbt test
 ```
 
-#### Examples
+### Examples
 
 ```scala
 import io.scalajs.npm.express._
@@ -62,7 +69,7 @@ app.ws("/", (ws: WS, req: Request) => {
 app.listen(3000)
  ```
 
-#### Artifacts and Resolvers
+### Artifacts and Resolvers
 
 To add the `ExpressWS` binding to your project, add the following to your build.sbt:  
 
