@@ -5,8 +5,8 @@ import sbt._
 
 import scala.language.postfixOps
 
-val apiVersion = "2.0.0-2"
-val scalaJsIOVersion = "0.3.0.6"
+val apiVersion = "2.0.0-3"
+val scalaJsIOVersion = "0.3.0.7"
 val scalaJsVersion = "2.12.1"
 
 homepage := Some(url("https://github.com/scalajs.io/express-ws"))
@@ -27,7 +27,7 @@ lazy val root = (project in file(".")).
 	    "org.scala-lang" % "scala-reflect" % scalaJsVersion,
 	    "org.scalatest" %%% "scalatest" % "3.0.1" % "test",
 	    "io.scalajs" %%% "nodejs" % scalaJsIOVersion,
-      "io.scalajs.npm" %%% "express" % scalaJsIOVersion
+      "io.scalajs.npm" %%% "express" % "4.14.1-3"
   ))
 
 /////////////////////////////////////////////////////////////////////////////////
