@@ -73,7 +73,7 @@ app.listen(3000)
 To add the `ExpressWS` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "express-ws" % "0.4.0-pre3"
+libraryDependencies += "io.scalajs.npm" %%% "express-ws" % "0.4.0-pre4"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
