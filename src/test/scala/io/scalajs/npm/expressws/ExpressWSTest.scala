@@ -3,7 +3,7 @@ package io.scalajs.npm.expressws
 import io.scalajs.nodejs._
 import io.scalajs.npm.express._
 import io.scalajs.util.JSONHelper._
-import io.scalajs.util.PromiseHelper._
+import io.scalajs.util.ScalaJsHelper._
 import org.scalatest.FunSpec
 
 import scala.concurrent.duration._
